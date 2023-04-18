@@ -2,3 +2,8 @@
 fetch('./menu.json')
 .then((response) => response.json())
 .then((json) => console.log(json));
+const text = '["Ford", "BMW", "Audi", "Fiat"]';
+const myArr = JSON.parse(text);
+
+const flashcards = json.menu.filter(obj => obj.category.includes("flashcards"));
+const flashcardArray = flashcards.map(obj => [obj.front, obj.back]);
