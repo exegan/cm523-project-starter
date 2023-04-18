@@ -55,6 +55,13 @@ h1 {
 h2 {
   padding: 1rem;
   color: #1f330a;
+  font-family: "Allerta", sans-serif;
+
+}
+h3{
+  color: #1f330a;
+  font-family: "Allerta", sans-serif;
+
 }
 
 fieldset {
