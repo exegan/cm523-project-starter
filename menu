@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>STU-TEA</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+    <h1>Menu</h1>
+      
+
+      
+    </header>
+    
+    
+     <nav>
+      <ul>
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="flashcards">Flashcards</a></li>
+        <li><a href="#gameone">Game One</a></li>
+        <li><a href="gametwo">Game Two</a></li>
+      </ul>
+    </nav>
+   
+    
+    
+    <h2>Step One: Imput Your Terms and Definitions into the Respective Columns </h2>
+    
+             
+  
+     <fieldset>
+  <label for="term">Question or Term<textarea id="term" rows="5" cols="30"
+placeholder="What is the meaning of life?"></textarea>
+        </label>
+       
+        <label for="definition">Answer or Definition<textarea id="definition" rows="5" cols="30"
+placeholder="I have no fucking idea"></textarea>
+          <input type="submit" value="ADD CARD" />
+        </label>
+      </fieldset>
+    <fieldset>
+       <button type="button">FLASHCARDS</button>
+                <button type="button">GAME ONE</button>
+                <button type="button">GAME TWO</button>
+          
+      
+      
+      </fieldset>
+    
+    
+      </body>
+</html>

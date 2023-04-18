@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>STU-TEA</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+    <h1>Game One:
+      Pour Memory </h1>
+      
+    </header>
+    
+    
+     <nav>
+      <ul>
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="flashcards">Flashcards</a></li>
+        <li><a href="#gameone">Game One</a></li>
+        <li><a href="gametwo">Game Two</a></li>
+      </ul>
+    </nav>
+   
+    
+    
+    <h2>Instructions</h2>
+    <h3> Drag the teapot and try and pour it into the cup of the correct answer </h3>
+    
+     <canvas id="canvas">
+      
+    </canvas>
+    
+              <fieldset>
+      
+      </fieldset>
+    
+    
+      </body>
+</html>
