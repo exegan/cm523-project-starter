@@ -34,173 +34,31 @@
    
     
     <h2>Step One: Imput Your Terms and Definitions into the Respective Columns </h2>
-    <fieldset>
-        <table>
-                <colgroup span="2"></colgroup>
-                        <tr>
-                                <th scope="col">Term</th>
-                                <th scope="col">Answer</th>
-                            </tr>
-                            <tr>
-                            <td></td>
-                            </tr>
-
-  
-                <tbody>
-                    <tr>
-                        
-                      
-                    </tr>
-                </tbody>
-
-                <tfoot>
-                        <tr>
-                            <button type="submit">submit</button>
-                          
-                        </tr>
-                    </tfoot>
-            </table>
-            
-            
-    </fieldset>
-    <fieldset>    
-      <form id="menu">
-
-        <fieldset>
-          <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                  
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                  
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no fucking idea"></textarea>
-                  
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                  
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                  
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                  
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea> <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no idea"></textarea>
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-                   <label for="term">Term<textarea id="term" rows="5" cols="30"
-        placeholder="What is the meaning of life?"></textarea>
-                </label>
-               
-                <label for="definition">Definition<textarea id="definition" rows="5" cols="30"
-        placeholder="I have no  idea"></textarea>
-
-                    <input type="submit" value="submit" />
-                  </label>
-                </fieldset>
-
-      </form>
-      <script src="data/menu.json"></script>
-      
-      </fieldset>
+    <fieldset id="flashcard-container" name="flashcard-container">
+        <div class="form-element">
+          <div class="question-label">
+            <label for="term">Question or Term</label>
+          </div><textarea id="term" rows="5" cols="30" placeholder="What is the meaning of life?"></textarea>
+        </div>
+    
+        <div class="form-element">
+          <div class="answer-label">
+            <label for="definition">Answer or Definition</label>
+          </div><textarea id="definition" rows="5" cols="30" placeholder="I have no  idea"></textarea>
+        </div>
+        
+    <div id="addFlashcard">
+      <button type="button" onclick="addFlashcard()">ADD CARD</button>
+        </div>
+        </fieldset>
+        
+        
       <fieldset>
-        <a href="flashcards.html"><button>Generate Flashcards</button></a>
-    </fieldset>
-
-
-
+        <input type="submit" value="SUBMIT CARDS" />
+        <button type="button">GAME ONE</button>
+        <button type="button">GAME TWO</button>
+    
+      </fieldset>
     
       <footer id="project-footer">
         <a href="#proposal">Proposal</a>

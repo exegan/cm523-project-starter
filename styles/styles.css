@@ -14,19 +14,6 @@
 html {
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css2?family=Allerta&family=Mystery+Quest&display=swap");
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html {
-  box-sizing: border-box;
-}
 
 /* Body */
 
@@ -192,6 +179,97 @@ p{
 }
 
 /* === MENU === */
+
+.form-element {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#addFlashcard{
+      display: flex;
+    padding: 2rem;
+   border: none;
+    vertical-align: bottom;
+     position: fixed;
+  right: 0;
+    margin-right: 20px;
+}
+
+
+fieldset {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  margin: 0 auto;
+  border: 3px solid #3b3b4f;
+  color: #1f330a;
+  padding: 1rem;
+}
+
+
+input,
+textarea,
+select {
+  font-family: "Allerta", sans-serif;
+
+  background-color: #f7ede2;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+label[for="term"] {
+  text-align: left;
+  padding: 1rem;
+}
+#term {
+  text-align: left;
+}
+label[for="definition"] {
+  text-align: right;
+  padding: 1rem;
+}
+#definition {
+  text-align: right;
+}
+
+.question-label,
+.answer-label {
+  position: relative;
+}
+
+.inline {
+  width: unset;
+  width: unset;
+  margin-right: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  min-width: 300px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3em;
+  font-size: 1rem;
+  background-color: #db5778;
+  color: #171a14;
+  border-radius: 7px;
+  box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
+  padding: 10px;
+  font-family: "Allerta", sans-serif;
+ 
+}
+
 
 /* === FLASHCARDS === */
 
