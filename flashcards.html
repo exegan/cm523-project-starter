@@ -35,16 +35,21 @@
     
     <h2>Click on the card to flip the flashcard over and see the definition! Click on the arrows (or use your arrow keys) to move between the flashcards!</h2>
 
-<fieldset>
-
-  <div id="flashcards-container"></div>
- 
-                                        <button type="button">Flip Card</button>
-                                        <button type="button">Next Card</button>
-                                        <button type="button">Previous Card</button>                      
-</fieldset>
-
-<fieldset>
+    <div id="flashcard-container">
+      <div id="flashcard">
+        <div id="front" class="card">
+          <h2>Front of Card</h2>
+        </div>
+        <div id="back" class="card">
+          <h2>Back of Card</h2>
+        </div>
+      </div>
+      <div id="controls">
+        <button id="flip-btn">Flip Card</button>
+        <button id="next-btn">Next Card</button>
+      </div>
+    </div>
+    
 
   <a href="gameone.html"><button>Game One</button></a>
 
