@@ -221,11 +221,13 @@ select {
   display: inline-block;
   vertical-align: top;
   margin-right: 20px;
+  color: #1f330a;
 }
 
 label[for="term"] {
   text-align: left;
   padding: 1rem;
+  color: #1f330a;
 }
 #term {
   text-align: left;
@@ -233,9 +235,11 @@ label[for="term"] {
 label[for="definition"] {
   text-align: right;
   padding: 1rem;
+  color: #1f330a;
 }
 #definition {
   text-align: right;
+  color: #1f330a;
 }
 
 .question-label,
@@ -304,18 +308,17 @@ input[type="submit"] {
   content: "";
   height: 6.25em;
   width: 6.25em;
-  border: 1.56em solid#70163c;
+  border: 1em solid#70163c;
   right: -6.25em;
   bottom: 7.5em;
   border-radius: 50%;
-  background:  #70163c;
   color:  #70163c;
 }
 
 #term{
   font-family: 'Mystery Quest', cursive;
   font-size: 1em;
-  color: #ede7de;
+  color: #1f330a;
 text-align: center;
 font-size: 1.5em;
 line-height: 1.5em;
@@ -324,9 +327,10 @@ text-align: center;
 #definition{
   font-family: 'Mystery Quest', cursive;
   font-size: .5em;
-  color: #ede7de;
+
 line-height: 1.5em;
 text-align: center;
+color: #1f330a;
 }
 
 
