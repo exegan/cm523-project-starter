@@ -39,22 +39,10 @@ for (let i = 0; i < flashcardElements.length; i++) {
   });
 }
 
-fetch('menu.json', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(flashcardData),
-})
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Error sending flashcard data');
-    }
-    console.log('Flashcard data sent successfully');
-  })
-  .catch(error => {
-    console.error(error);
-  });
+
+localStorage.setItem('flashcardData', JSON.stringify(flashcardData));
+
+window.location.href = 'flashcards.html';
 
 
 

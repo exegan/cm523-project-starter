@@ -1,12 +1,5 @@
-    fetch('menu.json')
-  .then(response => response.json())
-  .then(data => {
-    const flashcards = data.flashcards;
-    createFlashcards(flashcards);
-  })
-  .catch(error => console.error(error));
-
-
+const flashcardData = JSON.parse(localStorage.getItem('flashcardData'));
+console.log(flashcardData);
 
 function createFlashcards(flashcards){
 
