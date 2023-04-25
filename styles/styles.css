@@ -313,7 +313,6 @@ input[type="submit"] {
 }
 
 #term{
-  transform: rotateY(180deg);
   font-family: 'Mystery Quest', cursive;
   font-size: 1em;
   color: #ede7de;
