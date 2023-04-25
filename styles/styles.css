@@ -285,7 +285,7 @@ input[type="submit"] {
 
 
 #flashcard{
-  background: #F7EDE2;
+  background:  #70163c;
   position: absolute;
   height: 20em;
   width: 21.87em;
@@ -315,7 +315,7 @@ input[type="submit"] {
   transform: rotateY(180deg);
   font-family: 'Mystery Quest', cursive;
   font-size: 1em;
-  color: #70163c;
+  color: #ede7de;
 text-align: center;
 font-size: 1.5em;
 line-height: 1.5em;
@@ -324,7 +324,7 @@ text-align: center;
 #definition{
   font-family: 'Mystery Quest', cursive;
   font-size: .5em;
-  color: #70163c;
+  color: #ede7de;
 line-height: 1.5em;
 text-align: center;
 }
