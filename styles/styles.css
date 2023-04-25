@@ -174,11 +174,17 @@ nav:active {
   color: ;
 }
 /* === TEA-TIME aka Home === */
+.index-body{
+  background: #f7ede2;
+}
 p{
   padding: 1rem;
 }
 
 /* === MENU === */
+.menu-body{
+  color: #1f330a;
+}
 
 .form-element {
   display: inline-block;
@@ -276,6 +282,9 @@ input[type="submit"] {
 
 
 /* === FLASHCARDS === */
+.flashcards-body{
+  background:  #70163c;
+}
 
 #flashcard-container{
   margin: 0 auto;
@@ -350,9 +359,14 @@ color: #1f330a;
 }
 
 /* === GAME ONE === */
+.gameone-body{
+  background-color: #f7ede2;
+}
 
 /* === GAME TWO === */
-
+.gametwo-body{
+  background-color: #f7ede2;
+}
 
 
 /* === FOOTER === */
