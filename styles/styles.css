@@ -309,6 +309,8 @@ input[type="submit"] {
   right: -6.25em;
   bottom: 7.5em;
   border-radius: 50%;
+  background:  #70163c;
+  color:  #70163c;
 }
 
 #term{
