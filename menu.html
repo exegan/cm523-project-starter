@@ -34,6 +34,8 @@
    
     
     <h2>Step One: Imput Your Terms and Definitions into the Respective Columns </h2>
+
+    <form id="flashcard-form">
     <fieldset id="flashcard-container" name="flashcard-container">
         <div class="form-element">
           <div class="question-label">
@@ -51,10 +53,16 @@
       <button type="button" onclick="addFlashcard()">ADD CARD</button>
         </div>
         </fieldset>
-        
+
+        <div id="addFlashcard">
+          <button type="button" onclick="addFlashcard()">ADD CARD</button>
+            </div>
+            </fieldset>
+
+            <button type="submit" onclick="sendFlashcardData()">Submit</button>
+          </form>
         
       <fieldset>
-        <input type="submit" value="SUBMIT CARDS" />
         <button type="button">GAME ONE</button>
         <button type="button">GAME TWO</button>
     
