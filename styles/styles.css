@@ -273,28 +273,77 @@ input[type="submit"] {
 
 /* === FLASHCARDS === */
 
+#flashcard-container{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 70vw;
+  height: 70vw;
+  position: relative;
+  overflow: visible;
+  background: none;
+}
+
+
 #flashcard{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    border-radius: 15px;
+  background: #F7EDE2;
   position: absolute;
-  width: 80%;
-  height: 80%;
-  backface-visibility: hidden;
+  height: 20em;
+  width: 21.87em;
+  border-radius: 1.25em 1.25em 9.37em 9.37em;
+  bottom: 6.25em;
+  left: 2.5em;
+  padding: 1.5em;
+  overflow: hidden;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
 
 }
-#term{
 
+#flashcard:before {
+  position: absolute;
+  content: "";
+  height: 6.25em;
+  width: 6.25em;
+  border: 1.56em solid #ede7de;
+  right: -6.25em;
+  bottom: 7.5em;
+  border-radius: 50%;
+}
+
+#term{
+  transform: rotateY(180deg);
+  font-family: 'Mystery Quest', cursive;
+  font-size: 1em;
+  color: #70163c;
+text-align: center;
+font-size: 1.5em;
+line-height: 1.5em;
+text-align: center;
 }
 #definition{
-
-  transform: rotateY(180deg);
-
-
+  font-family: 'Mystery Quest', cursive;
+  font-size: .5em;
+  color: #70163c;
+line-height: 1.5em;
+text-align: center;
 }
 
 
+
+#controls{
+  background-color:#F7EDE2;
+  font-family: 'Allerta', sans-serif;
+  margin: 10px 0 0 0;
+}
+
+#flashcard.clicked #term {
+  display: none;
+}
+
+#flashcard.clicked #definition {
+  display: block;
+}
 
 /* === GAME ONE === */
 
