@@ -28,6 +28,33 @@ function addFlashcard() {
   flashcardContainer.appendChild(newFieldset);
 }
 
+const flashcardData = [];
+const flashcardElements = document.querySelectorAll('#flashcard-container fieldset');
+for (let i = 0; i < flashcardElements.length; i++) {
+  const questionTextarea = flashcardElements[i].querySelector(`#term-${i + 1}`);
+  const answerTextarea = flashcardElements[i].querySelector(`#definition-${i + 1}`);
+  flashcardData.push({
+    question: questionTextarea.value,
+    answer: answerTextarea.value
+  });
+}
+
+fetch('menu.json', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(flashcardData),
+})
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Error sending flashcard data');
+    }
+    console.log('Flashcard data sent successfully');
+  })
+  .catch(error => {
+    console.error(error);
+  });
 
 
 
