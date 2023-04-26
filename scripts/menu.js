@@ -42,7 +42,7 @@ for (let i = 0; i < flashcardElements.length; i++) {
 
 localStorage.setItem('flashcardData', JSON.stringify(flashcardData));
 
-window.location.href = 'flashcards.html';
+/* window.location.href = 'flashcards.html'; */
 
 
 
