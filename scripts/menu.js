@@ -30,9 +30,6 @@ addCardBtn.addEventListener('click', addFlashcard);
   flashcardContainer.appendChild(newFieldset);
 }
 
-
-
-
 function sendFlashcardData(){
   const flashcardData = [];
 const flashcardElements = document.querySelectorAll('#flashcard-container fieldset');
@@ -47,6 +44,9 @@ for (let i = 0; i < flashcardElements.length; i++) {
 
 }
 localStorage.setItem('flashcardData', JSON.stringify(flashcardData));
+
+const submitBtn = document.getElementById('submitBtn');
+submitBtn.addEventListener('click', sendFlashcardData);
 
 
 
