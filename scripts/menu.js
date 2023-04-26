@@ -1,6 +1,8 @@
 let flashcardCount = 1;
 
 function addFlashcard() {
+  const addCardBtn = document.getElementById('addCardBtn');
+addCardBtn.addEventListener('click', addFlashcard);
   if (flashcardCount >= 20) {
     return; // don't add more than 20 flashcards
   }
@@ -28,7 +30,11 @@ function addFlashcard() {
   flashcardContainer.appendChild(newFieldset);
 }
 
-const flashcardData = [];
+
+
+
+function sendFlashcardData(){
+  const flashcardData = [];
 const flashcardElements = document.querySelectorAll('#flashcard-container fieldset');
 for (let i = 0; i < flashcardElements.length; i++) {
   const questionTextarea = flashcardElements[i].querySelector(`#term-${i + 1}`);
@@ -39,10 +45,10 @@ for (let i = 0; i < flashcardElements.length; i++) {
   });
 }
 
-
+}
 localStorage.setItem('flashcardData', JSON.stringify(flashcardData));
 
-/* window.location.href = 'flashcards.html'; */
+
 
 
 
