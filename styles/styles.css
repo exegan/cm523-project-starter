@@ -1,6 +1,3 @@
-/* ===== YOUR CSS GOES HERE ===== */
-/* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
-
 @import url("https://fonts.googleapis.com/css2?family=Allerta&family=Mystery+Quest&display=swap");
 
 *,
@@ -15,104 +12,70 @@ html {
   box-sizing: border-box;
 }
 
-/* Body */
-
+/* body */
 body {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  background: #f7ede2;
-  color: #f5f6f7;
-  font-family: "Allerta", sans-serif;
+  margin: .5em;
+  padding: 1em;
+  color: #1f330a;
+  background-color:#f7ede2;
+
 }
 
-label {
-  display: block;
-  margin: 0.5rem 0;
-}
 
-/* === HEADER === */
-
+/* header */
 h1 {
-  padding: 1rem;
   vertical-align: middle;
   font-family: "Mystery Quest", cursive;
-  color: #1f330a;
+color:#d22971;
+font-size: 1.5rem;
+background-color:#f7ede2;
+justify-content: start;
 }
 h2 {
-  padding: 1rem;
-  color: #1f330a;
-  font-family: "Allerta", sans-serif;
+
+color:#d22971;
+font-family: "Mystery Quest", cursive;
+font-size: 1rem;
+background-color:#f7ede2;
+justify-content: start;
+
 
 }
 h3{
   color: #1f330a;
   font-family: "Allerta", sans-serif;
+  font-size: 1rem;
+background-color:#f7ede2;
+justify-content: start;
 
 }
 
-fieldset {
-  margin: 0 auto;
-  max-width: 800px;
-  min-width: 300px;
-  width: 600vw;
-  padding: 20px;
-  padding-top: 2rem;
-  border: 3px solid #3b3b4f;
-  vertical-align: middle;
-  color: #1f330a;
-}
-input,
-textarea,
-select {
-  width: 100%;
-  margin: 10px 0 0 0;
-  font-family: "Allerta", sans-serif;
 
-  background-color: #f7ede2;
-}
-.inline {
-  width: unset;
-  width: unset;
-  margin-right: 0.5em;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-}
-input[type="submit"] {
-  display: block;
-  width: 60%;
-  min-width: 300px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  height: 2em;
-  font-size: 1.1rem;
-  background-color: #f7ede2;
-  border-color: white;
-}
-/* Button */
+/* button */
 
 button {
-  background-color: #db5778;
-  color: #171a14;
-  border-radius: 7px;
-  box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
-  padding: 10px;
-  font-family: "Allerta", sans-serif;
+ color: #70163c;
+  background-color: #c6dea6;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px;
+  font-family: "Mystery Quest", cursive;
+  font-size:1.5rem;
+  margin: 1em;
+  padding:1em;
+
 }
 button:hover {
   background-color: #70163c;
   color: #c6dea6;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 button:focus {
   outline-color: transparent;
   outline-style: solid;
   box-shadow: 0 0 0 4px color #171a14;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 button:active {
@@ -120,275 +83,70 @@ button:active {
   color: #c6dea6;
 }
 
-/* === NAVIGATION === */
 
-nav {
-  display: flex;
-  float: right;
-  padding: 1rem;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  float: right;
-}
-li {
-   list-style-type: none;
-  display: inline;
-  padding: 15px;
-  text-align: center;
-  border: 10px solid #c6dea6;
-}
+/* menu */
 
-nav ul li {
-  
-  text-transform: uppercase;
-  font-family: "Allerta", sans-serif;
-  border-right: 1px solid #bbb;
-  background-color: #f7ede2;
-  text-transform: uppercase;
-  float: right;
-}
-nav ul li:target {
-  font-style: italic;
-  float: left;
-  letter-spacing: 0.2em;
-  font-weight: normal;
-}
-
-nav:hover {
-  background-color:;
-  color: ;
-  transition: 0.5s;
-}
-
-nav:focus {
-  outline-color: transparent;
-  outline-style: solid;
-  box-shadow: 0 0 0 4px color #171a14;
-  transition: 0.5s;
-}
-
-nav:active {
-  background-color: ;
-  color: ;
-}
-/* === TEA-TIME aka Home === */
-.index-body{
-  background: #f7ede2;
-}
-p{
-  padding: 1rem;
-}
-
-/* === MENU === */
 .menu-body{
+  background-color:#f7ede2;
+  margin: 1em;
+  padding: 1em;
+
+}
+
+#flashcard-form{
+  background-color:#f7ede2;
+  justify-content: center;
+
+}
+#flashcard-container{
+  background-color:#f7ede2;
+  
+}
+.question-label{
+  background-color:#f7ede2;
+  justify-content: left;
+ 
+}
+label[for="question"]{
+  background-color:#f7ede2;
+  font-family: "Mystery Quest", cursive;
+  font-size: 1.5rem;
+  color:#d22971;
+}
+#question{
+  background-color:#f7ede2;
+  font-family: "Allerta", sans-serif;
+  font-size: 1rem;
   color: #1f330a;
 }
 
-.form-element {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
+.answer-label{
+  background-color:#f7ede2;
+  justify-content: right;
 }
-label {
-  display: block;
-  margin-bottom: 5px;
+label[for="answer"]{
+  background-color:#f7ede2;
+  font-family: "Mystery Quest", cursive;
+  font-size: 1.5rem;
+  color:#d22971;
+}
+#answer{
+  background-color:#f7ede2;
+  font-family: "Allerta", sans-serif;
+  font-size: 1rem;
+  color: #1f330a;
+}
+.menu-buttons{
+  display: flex;
+  justify-content: end;
 }
 
 #addFlashcard{
-      display: flex;
-    padding: 2rem;
-   border: none;
-    vertical-align: bottom;
-     position: fixed;
-  right: 0;
-    margin-right: 20px;
+
+}
+#submitBtn{
+
 }
 
 
-fieldset {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-  margin: 0 auto;
-  border: 3px solid #3b3b4f;
-  color: #1f330a;
-  padding: 1rem;
-}
-
-
-input,
-textarea,
-select {
-  font-family: "Allerta", sans-serif;
-
-  background-color: #f7ede2;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-  color: #1f330a;
-}
-
-label[for="term"] {
-  text-align: left;
-  padding: 1rem;
-  color: #1f330a;
-}
-#term {
-  text-align: left;
-}
-label[for="definition"] {
-  text-align: right;
-  padding: 1rem;
-  color: #1f330a;
-}
-#definition {
-  text-align: right;
-  color: #1f330a;
-}
-
-.question-label,
-.answer-label {
-  position: relative;
-}
-
-.inline {
-  width: unset;
-  width: unset;
-  margin-right: 0.5em;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-}
-input[type="submit"] {
-  display: block;
-  width: 60%;
-  min-width: 300px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  height: 3em;
-  font-size: 1rem;
-  background-color: #db5778;
-  color: #171a14;
-  border-radius: 7px;
-  box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
-  padding: 10px;
-  font-family: "Allerta", sans-serif;
- 
-}
-
-
-/* === FLASHCARDS === */
-.flashcards-body{
-  background:  #70163c;
-}
-
-#flashcard-container{
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 70vw;
-  height: 70vw;
-  position: relative;
-  overflow: visible;
-  background: none;
-}
-
-
-#flashcard{
-  background:  #70163c;
-  position: absolute;
-  height: 20em;
-  width: 21.87em;
-  border-radius: 1.25em 1.25em 9.37em 9.37em;
-  bottom: 6.25em;
-  left: 2.5em;
-  overflow: hidden;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  text-align: center;
-
-}
-
-#flashcard:before {
-  position: absolute;
-  content: "";
-  height: 6.25em;
-  width: 6.25em;
-  border: 1em solid#70163c;
-  right: -6.25em;
-  bottom: 7.5em;
-  border-radius: 50%;
-  color:  #70163c;
-}
-
-#term{
-  font-family: 'Mystery Quest', cursive;
-  font-size: 1em;
-  color: #1f330a;
-text-align: center;
-font-size: 1.5em;
-line-height: 1.5em;
-text-align: center;
-}
-#definition{
-  font-family: 'Mystery Quest', cursive;
-  font-size: .5em;
-
-line-height: 1.5em;
-text-align: center;
-color: #1f330a;
-}
-
-
-
-#controls{
-  background-color:#F7EDE2;
-  font-family: 'Allerta', sans-serif;
-  margin: 10px 0 0 0;
-}
-
-#flashcard.clicked #term {
-  display: none;
-}
-
-#flashcard.clicked #definition {
-  display: block;
-}
-
-/* === GAME ONE === */
-.gameone-body{
-  background-color: #f7ede2;
-}
-
-/* === GAME TWO === */
-.gametwo-body{
-  background-color: #f7ede2;
-}
-
-
-/* === FOOTER === */
-#project-footer{
-  background-color: #f7ede2;
-  color: #c6dea6;
-  font-family: "Allerta", sans-serif;
-}
-footer:hover {
-  background-color:;
-  color: ;
-  transition: 0.5s;
-}
-
-footer:focus {
-  outline-color: transparent;
-  outline-style: solid;
-  box-shadow: 0 0 0 4px color #171a14;
-  transition: 0.5s;
-}
-
-footer:active {
-  background-color: ;
-  color: ;
-}
+/* flashcards */

@@ -43,7 +43,7 @@ for (let i = 0; i < flashcardElements.length; i++) {
 }
 
 }
-localStorage.setItem('flashcardData', JSON.stringify(flashcardData));
+localStorage.setItem('flashcardData', JSON.stringify(sendFlashcardData));
 
 const submitBtn = document.getElementById('submitBtn');
 submitBtn.addEventListener('click', sendFlashcardData);

@@ -29,31 +29,30 @@
     </nav>
    
     
-    <h2>Step One: Imput Your Terms and Definitions into the Respective Columns </h2>
+    <h2>Step One: Imput Your Terms and Definitions into the Respective Sections </h2>
 
     <form id="flashcard-form">
     <fieldset id="flashcard-container" name="flashcard-container">
         <div class="form-element">
           <div class="question-label">
-            <label for="term">Question or Term</label>
-          </div><textarea id="term" rows="5" cols="30" placeholder="What is the meaning of life?"></textarea>
-        </div>
-    
-        <div class="form-element">
-          <div class="answer-label">
-            <label for="definition">Answer or Definition</label>
-          </div><textarea id="definition" rows="5" cols="30" placeholder="I have no  idea"></textarea>
+            <label for="question">Question or Term</label>
+         <textarea id="question" placeholder="Example Question or Term: Define Nebula"></textarea>
+          </div>
         </div>
         
+        <div class="form-element">
+          <div class="answer-label">
+            <label for="answer">Answer or Definition</label>
+          </div><textarea id="answer" placeholder="Example Answer or Definition: A cloud of dust or gas found between stars."></textarea>
+        </div>
+        <div class="menu-buttons">
         <div id="addFlashcard">
-          <button id="addCardBtn" type="button">ADD CARD</button>
+          <button id="addCardBtn" type="button">Add Card</button>
         </div>
         <div id="submitBtn">
         <button id="submitBtn" type="submit">Submit</button>
-      </div>
+      </div></div>
         </fieldset>
-
-        
           </form>
         
     
