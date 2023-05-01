@@ -1,8 +1,6 @@
 let flashcardCount = 1;
 
 function addFlashcard() {
-  const addCardBtn = document.getElementById('addCardBtn');
-addCardBtn.addEventListener('click', addFlashcard);
   if (flashcardCount >= 20) {
     return; // don't add more than 20 flashcards
   }
@@ -29,6 +27,8 @@ addCardBtn.addEventListener('click', addFlashcard);
   const flashcardContainer = document.getElementById('flashcard-container');
   flashcardContainer.appendChild(newFieldset);
 }
+const addCardBtn = document.getElementById('addCardBtn');
+addCardBtn.addEventListener('click', addFlashcard);
 
 function sendFlashcardData(){
   const flashcardData = [];
@@ -42,7 +42,6 @@ for (let i = 0; i < flashcardElements.length; i++) {
   });
 }
 localStorage.setItem('flashcardData', JSON.stringify(sendFlashcardData));
-
 const submitBtn = document.getElementById('submitBtn');
 submitBtn.addEventListener('click', sendFlashcardData);
 }
