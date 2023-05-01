@@ -100,11 +100,12 @@ button:active {
 }
 #flashcard-container{
   background-color:#f7ede2;
-  
+
 }
 .question-label{
   background-color:#f7ede2;
   justify-content: left;
+  display:inline-block;
  
 }
 label[for="question"]{
@@ -112,29 +113,34 @@ label[for="question"]{
   font-family: "Mystery Quest", cursive;
   font-size: 1.5rem;
   color:#d22971;
+  justify-content: left;
 }
 #question{
   background-color:#f7ede2;
   font-family: "Allerta", sans-serif;
   font-size: 1rem;
   color: #1f330a;
+  justify-content: left;
 }
 
 .answer-label{
   background-color:#f7ede2;
   justify-content: right;
+  display:inline-block;
 }
 label[for="answer"]{
   background-color:#f7ede2;
   font-family: "Mystery Quest", cursive;
   font-size: 1.5rem;
   color:#d22971;
+  justify-content: right;
 }
 #answer{
   background-color:#f7ede2;
   font-family: "Allerta", sans-serif;
   font-size: 1rem;
   color: #1f330a;
+  justify-content: right;
 }
 .menu-buttons{
   display: flex;
@@ -147,6 +153,56 @@ label[for="answer"]{
 #submitBtn{
 
 }
+
+
+
+.form-element {
+  display: block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+fieldset {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  margin: 0 auto;
+  border: 3px solid #3b3b4f;
+  color: #1f330a;
+  padding: 1rem;
+}
+
+
+input,
+textarea,
+select {
+  font-family: "Allerta", sans-serif;
+  background-color: #f7ede2;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  color: #1f330a;
+}
+
+.question-label,
+.answer-label {
+  position: relative;
+}
+
+.inline {
+  width: unset;
+  width: unset;
+  margin-right: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
 
 
 /* flashcards */
