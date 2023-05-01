@@ -114,6 +114,7 @@ label[for="question"]{
   font-size: 1.5rem;
   color:#d22971;
   justify-content: left;
+  display:inline;
 }
 #question{
   background-color:#f7ede2;
@@ -121,6 +122,7 @@ label[for="question"]{
   font-size: 1rem;
   color: #1f330a;
   justify-content: left;
+  display:inline;
 }
 
 .answer-label{
@@ -134,6 +136,7 @@ label[for="answer"]{
   font-size: 1.5rem;
   color:#d22971;
   justify-content: right;
+  display:inline;
 }
 #answer{
   background-color:#f7ede2;
@@ -141,6 +144,7 @@ label[for="answer"]{
   font-size: 1rem;
   color: #1f330a;
   justify-content: right;
+  display:inline;
 }
 .menu-buttons{
   display: flex;
