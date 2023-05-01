@@ -14,7 +14,7 @@ html {
 
 /* body */
 body {
-  margin: .5em;
+  margin: 1em;
   padding: 1em;
   color: #1f330a;
   background-color:#f7ede2;
@@ -27,9 +27,10 @@ h1 {
   vertical-align: middle;
   font-family: "Mystery Quest", cursive;
 color:#d22971;
-font-size: 1.5rem;
+font-size: 2rem;
 background-color:#f7ede2;
 justify-content: start;
+  margin: .5em;
 }
 h2 {
 
@@ -38,15 +39,17 @@ font-family: "Mystery Quest", cursive;
 font-size: 1rem;
 background-color:#f7ede2;
 justify-content: start;
+    margin: .5em;
 
 
 }
 h3{
   color: #1f330a;
   font-family: "Allerta", sans-serif;
-  font-size: 1rem;
+font-size: 1rem;
 background-color:#f7ede2;
 justify-content: start;
+margin: .5em;
 
 }
 
@@ -90,24 +93,29 @@ button:active {
   background-color:#f7ede2;
   margin: 1em;
   padding: 1em;
-
 }
 
 #flashcard-form{
   background-color:#f7ede2;
   justify-content: center;
-  display:inline-block;
+  flex-wrap: wrap;
+  
+
 
 }
 #flashcard-container{
   background-color:#f7ede2;
   display:inline-block;
+    display: flex;
+  flex-direction: row;
+    padding: 1em;
 
 }
 .question-label{
   background-color:#f7ede2;
   justify-content: left;
-  display:inline-block;
+margin:.5em;
+  
  
 }
 label[for="question"]{
@@ -116,7 +124,8 @@ label[for="question"]{
   font-size: 1.5rem;
   color:#d22971;
   justify-content: left;
-  display:inline;
+  
+
 }
 #question{
   background-color:#f7ede2;
@@ -124,13 +133,13 @@ label[for="question"]{
   font-size: 1rem;
   color: #1f330a;
   justify-content: left;
-  display:inline;
+
 }
 
 .answer-label{
   background-color:#f7ede2;
   justify-content: right;
-  display:inline-block;
+margin-top:.5em;
 }
 label[for="answer"]{
   background-color:#f7ede2;
@@ -138,7 +147,7 @@ label[for="answer"]{
   font-size: 1.5rem;
   color:#d22971;
   justify-content: right;
-  display:inline;
+
 }
 #answer{
   background-color:#f7ede2;
@@ -146,7 +155,7 @@ label[for="answer"]{
   font-size: 1rem;
   color: #1f330a;
   justify-content: right;
-  display:inline;
+
 }
 .menu-buttons{
   display: flex;
@@ -161,54 +170,12 @@ label[for="answer"]{
 }
 
 
-
-.form-element {
-  display: block;
-  vertical-align: top;
-  margin-right: 20px;
-}
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-
 fieldset {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-  margin: 0 auto;
+
+  margin: 1em;
   border: 3px solid #3b3b4f;
   color: #1f330a;
-  padding: 1rem;
+  padding: 1em;
 }
-
-
-input,
-textarea,
-select {
-  font-family: "Allerta", sans-serif;
-  background-color: #f7ede2;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-  color: #1f330a;
-}
-
-.question-label,
-.answer-label {
-  position: relative;
-}
-
-.inline {
-  width: unset;
-  width: unset;
-  margin-right: 0.5em;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
-
 
 /* flashcards */
