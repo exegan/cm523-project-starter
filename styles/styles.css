@@ -96,10 +96,12 @@ button:active {
 #flashcard-form{
   background-color:#f7ede2;
   justify-content: center;
+  display:inline-block;
 
 }
 #flashcard-container{
   background-color:#f7ede2;
+  display:inline-block;
 
 }
 .question-label{
