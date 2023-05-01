@@ -48,9 +48,16 @@
         <div class="menu-buttons">
         <div id="addFlashcard">
           <button id="addCardBtn" type="button">Add Card</button>
+          <script>
+            const addCardBtn = document.getElementById('addCardBtn');
+            addCardBtn.addEventListener('click', addFlashcard);    </script>
         </div>
         <div id="submitBtn">
         <button id="submitBtn" type="submit">Submit</button>
+        <script> 
+          const submitBtn = document.getElementById('submitBtn');
+          submitBtn.addEventListener('click', sendFlashcardData);
+        </script>
       </div></div>
         </fieldset>
           </form>

@@ -41,12 +41,11 @@ for (let i = 0; i < flashcardElements.length; i++) {
     answer: answerTextarea.value
   });
 }
-
-}
 localStorage.setItem('flashcardData', JSON.stringify(sendFlashcardData));
 
 const submitBtn = document.getElementById('submitBtn');
 submitBtn.addEventListener('click', sendFlashcardData);
+}
 
 
 
