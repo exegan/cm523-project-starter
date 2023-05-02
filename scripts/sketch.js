@@ -1,33 +1,23 @@
-const { Engine, World, Bodies, Mouse, MouseConstraint, Constraint } = Matter;
-
-let ground;
-const boxes = [];
-let bird;
+let targetColor;
+const targets = [];
+let objectColor;
 let world, engine;
 let mConstraint;
 let slingshot;
-
-let dotImg;
-let boxImg;
-let bkgImg;
-
-function preload() {
-  dotImg = loadImage('images/dot.png');
-  boxImg = loadImage('images/equals.png');
-  bkgImg = loadImage('images/skyBackground.png');
-}
 
 function setup() {
   const canvas = createCanvas(711, 400);
   engine = Engine.create();
   world = engine.world;
-  ground = new Ground(width / 2, height - 10, width, 20);
+  targetColor = color("#c6dea6");
+  ground = new Ground(width / 2, height - 10, width, 20, targetColor);
   for (let i = 0; i < 3; i++) {
-    boxes[i] = new Box(450, 300 - i * 75, 84, 100);
+    targets[i] = new Box(450, 300 - i * 75, 84, 100, color("#70163c"));
   }
-  bird = new Bird(150, 300, 25);
+  objectColor = color("#c6dea6");
+  term = new Object(150, 300, 25, objectColor);
 
-  slingshot = new SlingShot(150, 300, bird.body);
+  slingshot = new SlingShot(150, 300, term.body);
 
   const mouse = Mouse.create(canvas.elt);
   const options = {
@@ -42,9 +32,9 @@ function setup() {
 
 function keyPressed() {
   if (key == ' ') {
-    World.remove(world, bird.body);
-    bird = new Bird(150, 300, 25);
-    slingshot.attach(bird.body);
+    World.remove(world, term.body);
+    term = new Object(150, 300, 25, objectColor);
+    slingshot.attach(term.body);
   }
 }
 
@@ -55,12 +45,12 @@ function mouseReleased() {
 }
 
 function draw() {
-  background(bkgImg);
+  background(color("#135187"));
   Matter.Engine.update(engine);
   ground.show();
-  for (let box of boxes) {
-    box.show();
+  for (let target of targets) {
+    target.show();
   }
   slingshot.show();
-  bird.show();
+  term.show();
 }

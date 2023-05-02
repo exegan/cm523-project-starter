@@ -20,6 +20,10 @@ body {
   background-color:#f7ede2;
 
 }
+canvas {
+  display: block;
+}
+
 
 
 /* header */
@@ -43,8 +47,8 @@ justify-content: start;
     /* button */
 
 button {
-color:#d22971;
-background-color:#f7ede2;
+  color: #70163c;
+  background-color: #c6dea6;
    border-radius: 5px;
    border: 1px solid black;
    padding: 5px;
@@ -55,8 +59,8 @@ background-color:#f7ede2;
  
  }
  button:hover {
-  color:#d22971;
-  background-color:#f7ede2;
+  color: #70163c;
+  background-color: #c6dea6;
    transition: 0.2s;
  }
  
@@ -68,8 +72,8 @@ background-color:#f7ede2;
  }
  
  button:active {
-  color:#d22971;
-  background-color:#f7ede2;
+  color: #70163c;
+  background-color: #c6dea6;
  }
  
 
