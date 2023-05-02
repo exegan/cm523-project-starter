@@ -31,26 +31,30 @@ body {
 
 /* header */
 h1 {
+   vertical-align: middle;
+  font-family: "Mystery Quest", cursive;
   vertical-align: middle;
   font-family: "Mystery Quest", cursive;
   color: #70163c;
-  background-color: #c6dea6;
-  font-size: 2rem;
+  font-size: 1.5rem;
   justify-content: start;
   margin: .5em;
 }
 
 h2 {
   color: #70163c;
-  background-color: #c6dea6;
   font-family: "Mystery Quest", cursive;
   font-size: 1rem;
   justify-content: start;
   margin: .5em;
 }
+p{
+  font-family: "Allerta", sans-serif;
+  font-size: 1rem;
+}
 
 /* button */
-button {
+#shootyourshot {
   color: #70163c;
   background-color: #c6dea6;
   border-radius: 5px;
