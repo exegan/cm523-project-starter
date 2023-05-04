@@ -10,27 +10,57 @@
     <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
     <link rel="stylesheet" href="styles/styles.css" />
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
-    <script src="libraries/matter.js"></script>
-    <script src="libraries/p5.js"></script>
-    <script src="libraries/p5.play.js"></script>
-    <script src="sketch.js"></script>
-    <script src="matter.js"></script>
-    <script src="scripts/scripts.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>Shoot Your Shot</h1>
-    </header>
-<h2>What is Shoot Your Shot?</h2>
-<p>This Matter.js and p5.js slingshot app is a fun and interactive study tool that aims to help you improve your Spanish vocabulary by launching words at their corresponding translations.</p>
-<h2><a href="#shootyourshot.html">Lets Start!</a></h2>
 
-    <footer id="project-footer">
-      <a href="#proposal">Proposal</a>
-       <a href="#wireframe">Wireframe</a>
-      <a href="uxreport">UX Report</a>
-        <a href="#gameone">Game One</a>
-        <a href="prototype">Prototype</a>
-     </footer>
-  </body>
-</html>
+    <script src="scripts/scripts.js" defer></script>
+    <head>
+     
+    </head>
+    
+    <body>
+      <header>
+        <h1>STU-TEA</h1>
+        <h2>An interactive tea-themed interactive study aid!</h2>
+    
+      </header>
+    
+      <h3>Step One: Imput Your Terms and Definitions into the Respective Sections </h3>
+    
+      <form id="flashcard-form">
+        <fieldset id="flashcard-container" name="flashcard-container">
+          <div class="form-element">
+            <div class="question-label">
+              <label for="question">Question or Term</label>
+              <textarea id="question" placeholder="Example Question or Term: Define Nebula"></textarea>
+            </div>
+          </div>
+    
+          <div class="form-element">
+            <div class="answer-label">
+              <label for="answer">Answer or Definition</label>
+            </div><textarea id="answer" placeholder="Example Answer or Definition: A cloud of dust or gas found between stars."></textarea>
+          </div>
+          <div class="menu-buttons">
+            <div id="addFlashcard">
+              <button id="addCardBtn" type="button">Add Card</button>
+            </div>
+            <div id="submitBtn">
+              <button type="submit" id="submitBtn>Submit</button>
+          </div></div>
+            </fieldset>
+              </form>
+        
+        <div id=" teabag-flashcards">
+                <div class="teabag-card-list-container"></div>
+            </div>
+          </div>
+    
+          <footer id="project-footer">
+            <a href="#proposal">Proposal</a>
+            <a href="#wireframe">Wireframe</a>
+            <a href="uxreport">UX Report</a>
+            <a href="#gameone">Game One</a>
+            <a href="prototype">Prototype</a>
+          </footer>
+    </body>
+    
+    </html>
