@@ -12,260 +12,375 @@ html {
   box-sizing: border-box;
 }
 
-/* body */
+/* global styles */
+
 body {
   margin: 1em;
   padding: 1em;
- color: #70163c;
-  background-color: #c6dea6;
-
-
+  color: #70163c;
+  background-color: #B8C480;
 }
-
-
-/* header */
+header {
+  margin: 1em;
+height: 20vh;
+  margin-bottom: 20vh;
+}
 h1 {
-
-  font-family: "Mystery Quest", cursive;
- color: #70163c;
-  background-color: #c6dea6;
-  font-size: 2.5rem;
-  margin: .5em;
-   text-align: center;
-}
-h2 {
- color: #70163c;
-  background-color: #c6dea6;
-font-family: "Mystery Quest", cursive;
-font-size: 1.5rem;
-justify-content: start;
-    margin: .25em;
-   text-align: center;
-
-
-}
-h3{
- color: #70163c;
-  background-color: #c6dea6;
-  font-family: "Allerta", sans-serif;
-  font-size: 1rem;
-justify-content: start;
-    margin: .25em;
-   text-align: center;
-
-}
-
-
-/* button */
-
-button {
-   background-color: #70163c;
-  color: #c6dea6;
-  border-radius: 5px;
-  border: 1px solid black;
-  padding: 5px;
-  margin: 1.5em;
-  font-family: "Mystery Quest", cursive;
-  font-size:1.5rem;
-  padding:1em;
-}
-button:hover {
-  background-color: #70163c;
-  color: #c6dea6;
-  transition: 0.2s;
-}
-
-button:focus {
-  outline-color: transparent;
-  outline-style: solid;
-  box-shadow: 0 0 0 4px color #171a14;
-  transition: 0.2s;
-}
-
-button:active {
-   background-color:#f7ede2;
-  color: #1f330a;
-}
-
-
-/* menu */
-
-.menu-body{
-  background-color:#f7ede2;
-
-
- 
-
-}
-
-#flashcard-form{
-  background-color:#f7ede2;
-  justify-content: center;
-  display:inline-block;
-  border-radius: 1.25em 1.25em 9.37em 9.37em;
- margin: 1em;
-  position: relative;
-  transform: translateX(-50%);
-  left: 50%;
-}
-
-#flashcard-container{
-  background-color:#f7ede2;
-  display:flex;
-  width: 90vw;
-  max-width: 34em;
-  display: inline;
-  border-radius: 1.25em 1.25em 9.37em 9.37em;
-  
-
-
-}
-.question-label{
-  background-color:#f7ede2;
-  justify-content: left;
-  display:inline-block;
- 
-}
-label[for="question"]{
-  background-color:#f7ede2;
-  font-family: "Mystery Quest", cursive;
-  font-size: 1.5rem;
-   color: #70163c;
-  justify-content: left;
-  display:inline;
-}
-#question{
-  background-color:#f7ede2;
-  font-family: "Allerta", sans-serif;
-  font-size: 1rem;
-  color: #1f330a;
-  justify-content: left;
-  display:inline;
-}
-
-.answer-label{
-  background-color:#f7ede2;
-  justify-content: right;
-  display:inline-block;
-}
-label[for="answer"]{
-  background-color:#f7ede2;
-  font-family: "Mystery Quest", cursive;
-  font-size: 1.5rem;
-   color: #70163c;
-  justify-content: right;
-  display:inline;
-}
-#answer{
-  background-color:#f7ede2;
-  font-family: "Allerta", sans-serif;
-  font-size: 1rem;
-  color: #1f330a;
-  justify-content: right;
-  display:inline;
-}
-.menu-buttons{
-  display: flex;
-  justify-content: end;
-}
-
-
-.form-element {
-  display: block;
-  vertical-align: top;
-  margin-right: 20px;
-}
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-
-fieldset {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-  margin: 0 auto;
-  border: 5px solid #70163c;
-  color: #1f330a;
-  padding: 1rem;
-  
-}
-
-
-input,
-textarea,
-select {
-  font-family: "Allerta", sans-serif;
-  background-color: #f7ede2;
-  display: inline-block;
-  vertical-align: top;
-margin: 1em;
-   border: 2px solid #70163c;
-    color: #1f330a;
- 
-}
-
-.question-label,
-.answer-label {
-  position: relative;
-}
-
-.inline {
-  width: unset;
-  width: unset;
-  margin-right: 0.5em;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
-
-
-/* flashcards */
-
-
-
-#teabag-flashcards{
-  content: "";
-  height: 10em;
-  width: 7.5em;
-  background-color: #f7ede2;
-  clip-path: polygon(0% 100%, 0% 25%, 25% 0%, 75% 0%, 100% 25%, 100% 100%);
- 
-  background-size: 1.5em 1.5em;
-  left: -0.93em;
-  bottom: -1.25em;
   font-family: "Mystery Quest", cursive;
   color: #70163c;
-   background-color: #c6dea6;
-   font-size: 2.5rem;
-   margin: .5em;
-    text-align: center;
+  font-size: 2.5rem;
+  margin: 0.5em;
+  text-align: center;
+}
+h2 {
+  color: #70163c;
+  font-family: "Mystery Quest", cursive;
+  font-size: 1.5rem;
+  margin: 0.25em;
+  text-align: center;
+}
+h3 {
+  color: #A53860;
+  font-family: "Allerta", sans-serif;
+  font-size: .75rem;
+    line-height: 1.5rem;
+  margin: 0.25em;
+  text-align: center;
+}
+
+.study-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* buttons*/
+
+.saucer {
+  
+    position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+    background-color: #f7ede2;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+    border-radius: 4em;
+  height: 4.5em;
+  width: 25em;
+    z-index: 1;
+
+
+  
   
 }
-#teabag-card-list-container{
+button {
+  font-family: "Mystery Quest", cursive;
+  font-size: 1rem;
+  background-color: #A53860;
+  color: #f7ede2;
+  border-radius: 6px;
+  border: 2px solid #A53860;
+  padding: .5em;
+  display: inline-block;
+  margin: 10px 10px;
+  width: 10em;
+}
+
+#nextBtn, #backBtn {
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 3;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#nextBtn {
+  right: .5em;
+  margin-top: 30vw;
+}
+
+#backBtn {
+  left: .5em;
+  margin-top: 30vw;
+}
+
+
+button:active {
+  background-color: #f7ede2;
+  color: #A53860;
+}
+/*flashcards*/
+
+/* Card container */
+.card-container {
+  position: relative;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+   width: 100%;
+  height: 300px;
+  
+}
+
+/* Flashcard container */
+.flashcards {
+  display: flex;
+    animation: dip 0.6s ease-in-out;
+  height:280px;
+  
+}
+
+/* Flashcard carousel */
+.flashcard-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 200px;
+  height: 290px;
+}
+
+/* Individual flashcard */
+.card {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  margin: 5px;
+  display: flex;
+  align-items: flex-start;
+   clip-path: polygon(0% 100%, 0% 25%, 25% 0%, 75% 0%, 100% 25%, 100% 100%);
+}
+
+.card .front, .card .back {
+  position: absolute;
+  width: 200px;
+  height: 280px;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f7ede2;
+  clip-path: polygon(0% 100%, 0% 25%, 25% 0%, 75% 0%, 100% 25%, 100% 100%);
+  font-family: "Allerta", sans-serif;
+  color: #70163c;
+  font-size: 1.5rem; 
+  
+}
+
+.card .front {
+  color: #70163c;
+    width: 200px;
+  height: 280px;
+  clip-path: polygon(0% 100%, 0% 25%, 25% 0%, 75% 0%, 100% 25%, 100% 100%); 
+}
+
+.card .back {
+  transform: rotateY(180deg);
+    width: 200px;
+  height: 280px;
+  clip-path: polygon(0% 100%, 0% 25%, 25% 0%, 75% 0%, 100% 25%, 100% 100%);
+}
+
+.card.flipped .front {
+  transform: rotateY(-180deg);
+    width: 200px;
+  height: 280px;
+   clip-path: polygon(0% 100%, 0% 25%, 25% 0%, 75% 0%, 100% 25%, 100% 100%); 
+}
+
+.card.flipped .back {
+  transform: rotateY(0deg);
+    width: 200px;
+  height: 280px;
+   clip-path: polygon(0% 100%, 0% 25%, 25% 0%, 75% 0%, 100% 25%, 100% 100%); 
+}
+
+/* Dip animation */
+@keyframes dip {
+  30% {
+    background-color: #f7ede2;
+    transform: translateY(20em);
+     clip-path: polygon(0% 100%, 0% 25%, 25% 0%, 75% 0%, 100% 25%, 100% 100%); 
+      width: 200px;
+  height: 280px;
+  }
+ 
+  100% {
+    background-color: #f7ede2;
+    transform: translateY(0);
+     clip-path: polygon(0% 100%, 0% 25%, 25% 0%, 75% 0%, 100% 25%, 100% 100%); 
+      width: 200px;
+  height: 280px;
+  }
+}
+
+
+
+
+/* teacup flashcard imput */
+
+.question-label, .answer-label {
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+textarea {
+  font-family: "Allerta", sans-serif;
+  background-color: #f7ede2;
+  border: 2px solid #70163c;
+  color: #1f330a;
+  margin: 5em;
+  padding: 10px;
+  position: absolute;
+  max-width: 30%;
+  max-height: 45%;
+  display: flex;
+}
+label[for="answer"] {
+  background-color: #f7ede2;
+  font-family: "Mystery Quest", cursive;
+  font-size: 1.3rem;
+  color: #70163c;
+  display: flex;
+  margin: 10%;
+}
+label[for="question"] {
+  background-color: #f7ede2;
+  font-family: "Mystery Quest", cursive;
+  font-size: 1.3rem;
+  color: #70163c;
+  display: flex;
+  margin: 10%;
+}
+
+#answer {
+  flex: 1;
+  margin: 4em;
+  padding: 5px;
+  border: 2px solid #70163c;
+  border-radius: 0.5em;
+  background-color: #f7ede2;
+  color: #1f330a;
+  font-family: "Allerta", sans-serif;
+  right: -2em;
+  bottom: 7em;
+}
+
+#question {
+  flex: 1;
+  margin: 4em;
+  padding: 5px;
+  border: 2px solid #70163c;
+  border-radius: 0.5em;
+  background-color: #f7ede2;
+  color: #1f330a;
+  font-family: "Allerta", sans-serif;
+  left: -2em;
+  bottom: 7em;
+}
+.teacup-container {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+  justify-content: center;
+  flex-basis: 65%;
+  position: relative;
+  height: 25em;
+  width: 30em;
+  border-radius: 1.875em 1.875em 14.06em 14.06em;
+  left: -5em;
+  background-color: #f7ede2;
+  z-index: 1;
   display: grid;
-  padding: 0.2em;
-  gap: 1.5em;
-  grid-template-columns: 1fr 1fr 1fr;
-}  
+  grid-template-columns: 50% 50%; 
+  grid-template-rows: 20% 80%; 
+  grid-template-areas:
+    "header header"
+    "left right";
+  margin-top: 10vw;
+  
+}
+
+.teacup-container:before {
+  position: absolute;
+  content: "";
+  height: 15em;
+  width: 8em;
+  border: 1.5em solid #f7ede2;
+  right: -5em;
+  bottom: 6em;
+  border-radius: 80% 30%;
+  background-color: none;
+  z-index: -1;
+}
+
+/* footer 
+
+
 
 #project-footer{
     height: 8vw;
   width: 80vw;
-  background-color: #f7ede2;
-  border-radius: 2.5em;
-   justify-content: center;
-    display:flex;
-   border: 5px solid #70163c;
+
+
+
+
+
+}
+*/
+#project-footer {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  color: #f7ede2;
+  background-color: #70163c;
+  border: 5px solid #f7ede2;
+  border-radius: 3em;
   font-family: "Allerta", sans-serif;
-  margin-top:5px;
-  padding:.5em;
- flex-direction: row;
-   text-align: center;
+  flex-direction: row;
+  text-align: center;
+  bottom: -10em;
+  padding: .5em;
 }
 
+#project-footer a {
+  color: #f7ede2;
+  text-decoration: underline;
+  margin: 0 1em;
+}
 
+header, .flashcard-container, .teacup-container, footer {
+  max-width: 100%;
+}
 
+@media (min-width: 768px) {
+  header, .flashcard-container, .teacup-container, footer {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header, .flashcard-container, .teacup-container, footer {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  header, .flashcard-container, .teacup-container, footer {
+    max-width: 70%;
+  }
+}
 

@@ -13,53 +13,57 @@
 
     <script src="scripts/scripts.js" defer></script>
     <head>
-     
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./styles/normalize.css" />
+      <link rel="stylesheet" href="./styles/styles.css" />
+      <script src="./scripts/menu.js" defer></script>
+    
     </head>
     
     <body>
       <header>
         <h1>STU-TEA</h1>
-        <h2>An interactive tea-themed interactive study aid!</h2>
-    
+        <h2>An interactive study aid!</h2>
+         <h3>Let's get started creating your own custom flashcards! Simply press "Clear Flashcard Input" to clear the input field and start adding your terms and definitions. Once you're done, hit "Create Flashcard" to see your new flashcards. Flip them over by clicking on them and use the "Next" and "Back" buttons to move between cards. It's that easy! Let's ace that exam together! </h3>
       </header>
-    
-      <h3>Step One: Imput Your Terms and Definitions into the Respective Sections </h3>
-    
-      <form id="flashcard-form">
-        <fieldset id="flashcard-container" name="flashcard-container">
-          <div class="form-element">
-            <div class="question-label">
+      <div class="study-tools">
+      <section class="card-container">
+      <div class="flashcard-carousel">
+        <div class="flashcards">
+            <div class="card"> 
+      <div class="front">Question</div>
+      <div class="back">Answer</div>
+    </div>
+       
+        </div>
+      </div>
+      <button id="nextBtn">Next</button>
+      <button id="backBtn">Back</button>
+      </section>
+      
+      <section class="teacup-container">
+         <div class="question-label">
               <label for="question">Question or Term</label>
               <textarea id="question" placeholder="Example Question or Term: Define Nebula"></textarea>
             </div>
-          </div>
-    
-          <div class="form-element">
-            <div class="answer-label">
+          <div class="answer-label">
               <label for="answer">Answer or Definition</label>
-            </div><textarea id="answer" placeholder="Example Answer or Definition: A cloud of dust or gas found between stars."></textarea>
-          </div>
-          <div class="menu-buttons">
-            <div id="addFlashcard">
-              <button id="addCardBtn" type="button">Add Card</button>
-            </div>
-            <div id="submitBtn">
-              <button type="submit" id="submitBtn>Submit</button>
-          </div></div>
-            </fieldset>
-              </form>
-        
-        <div id=" teabag-flashcards">
-                <div class="teabag-card-list-container"></div>
-            </div>
-          </div>
-    
+            <textarea id="answer" placeholder="Example Answer or Definition: A cloud of dust or gas found between stars."></textarea></div>
+       
+      <div class="saucer">  
+        <div class="addFlashcardBtn">
+          <button id="add-flashcard">Clear Flashcard</button></div>
+           <div class="saveBtn">
+             <button id="saveBtn">Create Flashcard</button></div></div></section>
+    </div>
+     
           <footer id="project-footer">
-            <a href="#proposal">Proposal</a>
-            <a href="#wireframe">Wireframe</a>
-            <a href="uxreport">UX Report</a>
-            <a href="#gameone">Game One</a>
-            <a href="prototype">Prototype</a>
+        <a href="https://docs.google.com/document/d/19lRpNVgI3u0Z0aYUlqJA_pvDh7_0UJlGBDNC7ff9kUU/edit?usp=sharing">Proposal</a>
+    <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:947290b1-a00a-348e-a2a8-9abb1952f2b2">Wireframe</a>
+    <a href="https://docs.google.com/document/d/1JSaBbQ1c0cnG7pk9LaBmTHrint9jMxsRlslBSvsYnQE/edit?usp=sharing">UX Report</a>
+    <a href="https://docs.google.com/document/d/1BDGhI_nHg4oXRIDbgxe5hahXOavP8WBC5GF986l-KUk/edit?usp=sharing">Design Doc</a>
           </footer>
     </body>
     
